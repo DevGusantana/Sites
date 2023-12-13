@@ -1,0 +1,391 @@
+/* PADRÃO GERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.layout{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    margin: 40px 2%;
+    display: flex;
+}
+
+button{
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 10px #004badc2;
+    transform: scale(1.07);
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #004AAD;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    padding: 15px;
+}
+
+.btn-social button:hover{
+    padding: 15px;
+    box-shadow: 0px 0px 10px #004badc2;
+    transform: scale(1.07);
+}
+
+/* STYLE CABEÇALHO */
+
+header .layout img{
+    height:90px;
+    padding-top: 10px;
+}
+
+header{
+    padding: 20px 4%;
+}
+
+header > .layout{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #ffffff44;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:white;
+    transform: scale(1.07);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+header .B-Contato button{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #004AAD;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+header .B-Contato button:hover{
+    box-shadow: 0px 0px 10px #004badc2;
+    transform: scale(1.07);
+}
+
+/* STYLE TOPO */
+
+section .topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: left;
+    gap: 90px;
+}
+
+.topo h1{
+    color: white;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.topo .txt-topo p{
+    text-align: justify;
+    font-size: 17px;
+    color: white;
+    margin: 40px 0;
+}
+
+section .B-Saiba-Mais button{
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #004AAD;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section .B-Saiba-Mais button:hover{
+    box-shadow: 0px 0px 10px #004badc2;
+    transform: scale(1.07);
+}
+
+.topo .img-topo img{
+    margin: 60px 2%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Style Sobre */
+
+section.Sobre{
+    padding: 60px 4%;
+}
+
+section.Sobre .flex{
+    align-items: center;
+    gap: 50px;
+}
+
+.Sobre .txt{
+   color: #fff;
+   margin-bottom: 50px;
+}
+
+.Sobre .txt h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.Sobre .txt h2 span{
+    color: #004AAD;
+    display: block;
+}
+
+.Sobre .txt p{
+    margin: 20px 0;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.Sobre .txt .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #004AAD;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: -30px;
+    transition: .2s;
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 10px #004badc2;
+    transform: scale(1.07);
+}
+
+/* Style Apresentação */
+
+section.Apresentação{
+    padding: 40px 4%;
+}
+
+section.Apresentação .flex{
+    align-items: center;
+    gap: 50px;
+}
+
+.Apresentação .txt{
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.Apresentação .txt h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.Apresentação .txt .One{
+    padding: 50px 20px;
+}
+
+.Apresentação .txt .One p{
+    font-size: 16px;
+    color: white;
+}
+
+.Apresentação .txt .Two{
+    padding: 50px 20px;
+}
+
+.Apresentação .txt .Two p{
+    font-size: 16px;
+    color: white;
+}
+
+.Apresentação .txt .Three{
+    padding: 50px 20px;
+}
+
+.Apresentação .txt .Three p{
+    font-size: 16px;
+    color: white;
+}
+
+.Apresentação .txt .Four{
+    padding: 50px 20px;
+}
+
+.Apresentação .txt .Four p{
+    font-size: 16px;
+    color: white;
+}
+
+.Apresentação .txt .Five{
+    padding: 50px 20px;
+}
+
+.Apresentação .txt .Five p{
+    font-size: 16px;
+    color: white;
+}
+
+/* Style Formulário */
+
+section.Formulário{
+    padding: 40px 4%;
+}
+
+section.Formulário .flex{
+    align-items: center;
+    gap: 50px;
+}
+
+.Formulário .txt{
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 5px;
+}
+ 
+.Formulário .txt h2{
+    font-size: 40px;
+}
+ 
+.Formulário .txt h2 span{
+    color: #004AAD;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #464646d7;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 17px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form .btn-enviar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #004AAD;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Style Rodapé */
+
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 50px 10px #ffffff1d;
+}
+
+footer .layout img{
+    clip-path: inset(4px 10px 4px 10px);
+    padding: 0 15px;
+    height:90px;
+}
+
+.flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
+
+footer .borda{
+    border-top: 3px solid #004AAD;
+}
+
+footer .line-footer p{
+    padding: 10px 50px;
+}
+
+footer .line-footer p i{
+    color:#004AAD;
+}
+
+footer .line-footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
